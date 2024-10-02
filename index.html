@@ -5,7 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 2 (7)</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Fredoka:wght@300..700&family=Mukta:wght@200;300;400;500;600;700;800&family=Short+Stack&display=swap"
+        rel="stylesheet">
+    <!---FONT AWESOME cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./styles.css">
+    <!-- boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 
 <body>
@@ -14,25 +27,84 @@
         <header>
             <nav class="navbar">
                 <h3 id="head">AROMA <span id="tag">Aroma Delights</span></h3>
-                <ul class="list">
-                    <li class="items">Home</li>
-                    <li class="items">About Us</li>
-                    <li class="items">Dishes</li>
-                    <li class="items">Location</li>
-                    <li class="items">Contact</li>
+                <input type="checkbox" id="checkbox">
+                <label for="checkbox" class="icons">
+                    <i class="fa-solid fa-bars" id="menu"></i>
+                    <i class="fa-solid fa-x" id="close"></i>
+                </label>
+                <ul class="list"></ul>
+                <li class="items">Home</li>
+                <li class="items">About Us</li>
+                <li class="items">Dishes</li>
+                <li class="items">Location</li>
+                <li class="items">Contact</li>
+
                 </ul>
             </nav>
         </header>
         <!-- bg image+logo -->
+        <div class="landing">
+            <img class="main-landing"
+                src="https://cdnassets.hw.net/97/65/2d95f33f43c8bfce45d26b8da15d/kontumindochinecafe-dining-hero-tcm20-2162761.jpg"
+                alt="not found" />
+            <img class="logo-landing"
+                src="https://r2.erweima.ai/imgcompressed/compressed_9e593d252cd2a3149652f42afb43d57c.webp" class=""
+                alt="not found" />
+        </div>
         <!--welcome content -->
-        <!-- social media link -->
+
+        <div class="welcomepage">
+            <h1 class="welcomehead">Welcome</h1>
+            <p class="welcomecontent">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum nesciunt,
+                maiores in perspiciatis obcaecati eligendi sapiente eius nam modi reprehenderit, quas adipisci dolor
+                assumenda eaque harum illum, quia dolore sed.
+                Ipsum nesciunt ea debitis, consequuntur sapiente aliquam obcaecati voluptatibus assumenda quia error,
+                iste harum laudantium accusamus minima neque placeat maiores sequi incidunt. Eos repellat voluptatum
+                magnam, quibusdam provident voluptatem sint?</p>
+            <!-- social media link -->
+
+            <div class="icons-welcome">
+                <a class="welf"
+                    href="https://www.tripadvisor.in/Restaurants-g297633-Kochi_Cochin_Ernakulam_District_Kerala.html"><i
+                        class="fa-brands fa-square-facebook wel"></i></a>
+                <a class="welf" href="https://twitter.com/theworlds50best"><i
+                        class="fa-brands fa-square-twitter wel"></i></a>
+                <a class="welf" href="https://www.instagram.com/restaurants/?hl=en"> <i
+                        class="fa-brands fa-square-instagram wel"></i></a>
+            </div>
+        </div>
+
         <!-- dish content -->
+        <div class="dishslide">
+            <!-- slide 1 -->
+             <div class="slide" id="slide1">
+                <img class="slideimg" src="https://img.freepik.com/free-photo/grilled-zucchini-with-vegetables-tomato-sauce-concept-vegetarian-food_127032-3094.jpg" alt="no image found">
+                <p id="slidehead">all day full irish breakfast</p>
+                <p id="slidecontent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda error voluptatem nam explicabo a sapiente commodi Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores animi corrupti minus? Magni suscipit neque officiis corrupti tenetur perferendis impedit cum autem debitis dignissimos. Vero dignissimos libero dolore officia quo.</p>
+                <p id="read-more">Read More&nbsp;&nbsp;&nbsp;&nbsp;<a id="readmore-icon" href="https://www.w3schools.com/css/css_inline-block.asp"><i class="fa-solid fa-chevron-right"></i></a></p>
+             </div>
+            <!-- slide 2 -->
+            <div class="slide" id="slide2">
+                <img class="slideimg" src="https://img.freepik.com/premium-photo/spicy-chicken-rice-dish-fresh-tomatoes-cilantro-sprigs_1270611-4750.jpg?size=626&ext=jpg&ga=GA1.1.1131973056.1725861461&semt=ais_hybrid" alt="no image found">
+                <h4 id="slidehead">healthy breakfast</h4>
+                <p id="slidecontent">Assumenda error voluptatem nam explicabo a sapiente commodi Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores anLorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda error voluptatem nam explicabo a sapiente commodi </p>
+                <p id="read-more">Read More&nbsp;&nbsp;&nbsp;&nbsp;<a id="readmore-icon" href="https://www.w3schools.com/css/css_inline-block.asp"><i class="fa-solid fa-chevron-right"></i></a></p>
+            </div>
+            <!-- slide 3 -->
+            <div class="slide" id="slide3">
+                <img class="slideimg" src="https://img.freepik.com/premium-photo/plate-food-with-variety-vegetables-it_590832-3389.jpg?size=626&ext=jpg&ga=GA1.1.1131973056.1725861461&semt=ais_hybrid" alt="no image found">
+                <h4 id="slidehead">amazing lunch specials</h4>
+                <p id="slidecontent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda error voluptatem nam explicabo a sapiente commodi </p>
+                <p id="read-more">Read More&nbsp;&nbsp;&nbsp;&nbsp;<a id="readmore-icon" href="https://www.w3schools.com/css/css_inline-block.asp"><i class="fa-solid fa-chevron-right"></i></a></p>
+            </div>
+        </div>
         <!-- tea ad -->
         <!-- our locations -->
         <!-- social media footer -->
         <!-- footer -->
     </div>
 </body>
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 
 </html>
 <!-- <a href=""><img src="./img/logo.png" alt="not found"></a> -->

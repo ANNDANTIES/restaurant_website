@@ -1,43 +1,186 @@
-*{
-    margin:0px;
-    padding: 0px;
-    font-family: "Fredoka", sans-serif;
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Fredoka", sans-serif;
 }
-header{
-    width: 100%;
-    background-color: rgb(54, 182, 167);
-    padding: 20px 20px;
-    color:white;
+header {
+  /* width: 100%; */
+  background-color: rgb(54, 182, 167);
+  padding: 20px 20px;
+  color: white;
 }
 
-h3{
-    font-family: "Short Stack", cursive;
+h3 {
+  font-family: "Short Stack", cursive;
 }
-#tag{
-    font-size:x-small;
-    font-family: "Fredoka", sans-serif;
+#tag {
+  font-size: x-small;
+  font-family: "Fredoka", sans-serif;
 }
-.navbar{
-    width:100%;
-    display: flex;
-    justify-content: space-between;
-    
+.navbar {
+  /* width:100%; */
+  display: flex;
+  justify-content: space-between;
 }
-.list{
-    list-style: none;
-    position: relative;
-    right: 50px;
+.list {
+  list-style: none;
+  position: relative;
+  right: 80px;
 }
-.items{
-    display: inline;
-    padding: 10px;
+.items {
+  display: inline;
+  padding: 10px;
 }
-.short-stack-regular h4{
-    font-family: "Short Stack", cursive;
-    font-weight: 400;
+h4 {
+  font-family: "Short Stack", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+#checkbox {
+  display: none;
+}
+/* .icons {
+  font-size: 2.4rem;
+  color: rgb(245, 245, 249);
+  font-weight: 600;
+  position: absolute;
+  right: 18%;
+  cursor: pointer;
+  display: none;
+} */
+.icons menu,
+close {
+  display: none;
+}
+.landing {
+  width: 100%;
+  position: relative;
+}
+.main-landing {
+  width: 100%;
+  position: relative;
+  height: 500px;
+  z-index: 1;
+}
+.logo-landing {
+  position: absolute;
+  border: 2px solid rgb(250, 249, 249);
+  border-radius: 70px;
+  width: 180px;
+  height: 300px;
+  z-index: 2; /* Ensure logo stays on top */
+  top: 150px; /* Use top instead of margin for positioning */
+  left: 50%;
+  transform: translateX(-50%);
+}
+.welcomepage {
+    /* background-color: rgb(54, 182, 167); */
+  color:rgb(54, 182, 167); 
+  /* // rgb(178, 118, 39); */
+  text-align: center;
+  margin-top: 2%;
+}
+.welcomehead {
+    font-family: "Dancing Script", system-ui;
+    font-weight:900;
+    font-size: xx-large;
+    font-optical-sizing: auto;
     font-style: normal;
   }
-@media (max-width:76px)
-{
+.welcomecontent{
+    text-align: center;
+    padding: 30px;
+} 
+.icons-welcome{
+    /* display: flex;
+    justify-content:space-between;
+    align-items: center;     */
+    position: relative;
     
+}
+.welf{
+    text-decoration: none;
+    color: inherit;
+    margin: 0px 10px;
+
+}
+.wel{
+   font-size: 2.4rem;  
+}
+.dishslide{
+    margin-top:40px;
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: 500px 500px 500px;
+    align-items: center;  
+    background-color: aquamarine;
+    grid-template-rows: 500px;
+    width:100%;
+    box-sizing: border-box; 
+    column-gap:0.1px;
+    color: white;
+  
+}
+.slide{
+    /* height: 100%; */
+    margin-top: 30px;
+    text-align: center;
+}
+#slide1{  
+   background-color: rgb(181, 149, 111);
+}
+#slide2{
+    background-color:rgb(26, 145, 76)
+}
+#slide3{
+    background-color: rgb(90, 46, 24);
+}
+.slideimg{
+    height: 200px;
+    width: 250px;
+    border-radius: 100%;
+    padding: 0px 20%;
+}
+#slidehead {
+   font-size: xx-large;
+   margin-top: 30px;
+}
+#slidecontent {
+    font-size:larger;
+    font-weight: 400;
+    margin-top: 30px;
+}
+#read-more{
+    
+    color: black;
+}
+#readmore-icon{
+    text-decoration: none;
+    color: inherit;
+}
+@media (max-width: 760px)
+ {
+  .items {
+    display: none;
+  }
+  .icons {
+    display: block;
+  }
+#menu{
+    display: none;
+}
+  #close {
+    display: none;
+  }
+  #checkbox:checked ~ .icons #menu {
+    display: none;
+  }
+  #checkbox:checked ~ .icons #close {
+    display: block;
+  }
+
+  #checkbox:checked ~ .items {
+    display: grid;
+    background-color: yellow;
+  }
 }
