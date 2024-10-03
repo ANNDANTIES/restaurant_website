@@ -74,9 +74,8 @@ close {
   transform: translateX(-50%);
 }
 .welcomepage {
-    /* background-color: rgb(54, 182, 167); */
+    
   color:rgb(54, 182, 167); 
-  /* // rgb(178, 118, 39); */
   text-align: center;
   margin-top: 2%;
 }
@@ -91,67 +90,79 @@ close {
     text-align: center;
     padding: 30px;
 } 
-.icons-welcome{
-    /* display: flex;
+/* .icons-welcome{
+    display: flex;
     justify-content:space-between;
     align-items: center;     */
-    position: relative;
+    /* position: relative;
     
-}
+} */
 .welf{
     text-decoration: none;
     color: inherit;
     margin: 0px 10px;
-
 }
 .wel{
    font-size: 2.4rem;  
 }
-.dishslide{
-    margin-top:40px;
-    display: grid;
-    justify-content: space-evenly;
-    grid-template-columns: 500px 500px 500px;
-    align-items: center;  
-    background-color: aquamarine;
-    grid-template-rows: 500px;
-    width:100%;
-    box-sizing: border-box; 
-    column-gap:0.1px;
-    color: white;
-  
+.dish{
+  margin-top: 30px;
+  align-items: center;
 }
-.slide{
-    /* height: 100%; */
-    margin-top: 30px;
+.dishslide{
+    display: grid; 
+    grid-template-columns:repeat(3,500px);
+    color: white;
+    column-gap:20px; 
+    margin-left: 350px; 
+    grid-template-rows: 600px 600px 600px;
+}
+.bgsection1{
+  background-color: rgb(222, 193, 160);
+  margin-top: -130px;
+  height: 100%;
+}
+.bgsection2{
+  background-color: rgb(59, 139, 94);
+  margin-top: -130px;
+  height: 100%;
+}
+.bgsection3{
+  background-color: rgb(125, 91, 74);
+  margin-top: -130px;
+  height: 100%;
+}
+.slide{ 
     text-align: center;
 }
-#slide1{  
-   background-color: rgb(181, 149, 111);
-}
-#slide2{
-    background-color:rgb(26, 145, 76)
-}
-#slide3{
-    background-color: rgb(90, 46, 24);
-}
+
 .slideimg{
     height: 200px;
     width: 250px;
     border-radius: 100%;
-    padding: 0px 20%;
+    /* padding: 0px 20%; */
+    transition: transform .2s;
+}
+.slideimg:hover {
+  transform: scale(1.1);
 }
 #slidehead {
    font-size: xx-large;
-   margin-top: 30px;
+   position: relative;
+   top: 140px;
 }
 #slidecontent {
+  position: relative;
     font-size:larger;
     font-weight: 400;
-    margin-top: 30px;
+    top:150px;
+}
+.head-content{
+  height: 500px;
 }
 #read-more{
-    
+    position: relative;
+
     color: black;
 }
 #readmore-icon{
