@@ -8,6 +8,9 @@
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Fredoka:wght@300..700&family=Mukta:wght@200;300;400;500;600;700;800&family=Short+Stack&display=swap"
         rel="stylesheet">
@@ -27,19 +30,18 @@
         <!-- header -->
         <header>
             <nav class="navbar">
-                <h3 id="head">AROMA <span id="tag">Aroma Delights</span></h3>
+                <h3 id="head" class="animate__animated animate__rubberBand">AROMA <span id="tags">Aroma Delights</span></h3>
                 <input type="checkbox" id="checkbox">
                 <label for="checkbox" class="icons">
                     <i class="fa-solid fa-bars" id="menu"></i>
                     <i class="fa-solid fa-x" id="close"></i>
                 </label>
-                <ul class="list"></ul>
-                <li class="items">Home</li>
-                <li class="items">About Us</li>
-                <li class="items">Dishes</li>
-                <li class="items">Location</li>
-                <li class="items">Contact</li>
-
+                <ul class="list">
+                    <li class="items">Home</li>
+                    <li class="items">About Us</li>
+                    <li class="items">Dishes</li>
+                    <li class="items">Location</li>
+                    <li class="items">Contact</li>
                 </ul>
             </nav>
         </header>
@@ -56,7 +58,7 @@
 
         <div class="welcomepage">
             <h1 class="welcomehead">Welcome</h1>
-            <p class="welcomecontent">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum nesciunt,
+            <p class="welcomecontent" style="font-size:25px">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum nesciunt,
                 maiores in perspiciatis obcaecati eligendi sapiente eius nam modi reprehenderit, quas adipisci dolor
                 assumenda eaque harum illum, quia dolore sed.
                 Ipsum nesciunt ea debitis, consequuntur sapiente aliquam obcaecati voluptatibus assumenda quia error,
@@ -140,7 +142,7 @@
             </div>
         </div>
 
-        <!-- tea ad -->
+        <!-- coffee ad -->
         <div class="coffee">
             <img class="coffee-img"
                 src="https://foolproofliving.com/wp-content/uploads/2016/02/05-8434-post/How-to-make-Turkish-Coffee-2-11158-Edit-3.jpg"
@@ -160,7 +162,9 @@
         </div>
         <!-- our locations -->
         <div class="dest">
-            <img class="dest-items" id="dest-img" src="https://i.pinimg.com/originals/9d/dc/16/9ddc169e674040a48fc654ab5e2af468.jpg" alt="image not found">
+            <img class="dest-items" id="dest-img"
+                src="https://i.pinimg.com/originals/9d/dc/16/9ddc169e674040a48fc654ab5e2af468.jpg"
+                alt="image not found">
             <div class="dest-items" id="dest-content">
                 <h4 id="head-dest">Our Best Locations!</h4>
                 <p id="content-dest">loremLorem ipsum dolor sit amet consectetur adipisicing elit. Eius, eligendi
@@ -170,10 +174,34 @@
                     eligendi ut ducimus beatae, error voluptates autem unde explicabo earum quae expedita temporibus!
                 </p>
             </div>
-            <img class="dest-items" id="dest-img" src="https://i.pinimg.com/474x/e0/3e/64/e03e64fb58c7a40dee9c1f605ddd7a60.jpg" alt="image not found">
+            <img class="dest-items" id="dest-img"
+                src="https://i.pinimg.com/474x/e0/3e/64/e03e64fb58c7a40dee9c1f605ddd7a60.jpg" alt="image not found">
         </div>
         <!-- social media footer -->
+        <div class="sm">
+            <div class="face" style="text-align: center;">
+                <i class="fa-brands fa-facebook-f brand"></i>
+                <p style="font-size:medium">Reach out to our Facebook page</p>
+            </div>
+            <div class="insta" style="text-align: center;">
+                <i class="fa-brands fa-instagram brand"></i>
+                <p style="font-size:medium">Reach out to our Instagram page</p>
+            </div>
+        </div>
         <!-- footer -->
+        <div class="footer">
+            <p class="footer-content">Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit. Doloribus reiciendis quaerat eligendi, nihil possimus sint cum ipsam aspernatur
+                repellat ipsa, quidem veniam dignissimos ducimus expedita at voluptatum, aut voluptatem! Animi!</p>
+            <img class="footer-logo"
+                src="https://r2.erweima.ai/imgcompressed/compressed_9e593d252cd2a3149652f42afb43d57c.webp"
+                alt="not found" />
+            <p class="footer-content" style="padding-left:250px;padding-right:250px;font-size:large;">Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Nemo minus minima deleniti illum, molestias, at non, velit totam odit numquam maiores
+                eveniet! Et iste eos consectetur itaque ipsam ducimus nihil.</p>
+        </div>
+        <!-- copyright -->
+        <p style="text-align: center;">All rights reserved to &#169;Anna Danties</p>
     </div>
 </body>
 <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
